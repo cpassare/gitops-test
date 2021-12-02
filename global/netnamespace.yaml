@@ -1,0 +1,7 @@
+apiVersion: network.openshift.io/v1
+kind: NetNamespace
+metadata:
+  name: cpassare-gitops-test
+netname: cpassare-gitops-test
+egressIPs:
+- 10.44.134.143
