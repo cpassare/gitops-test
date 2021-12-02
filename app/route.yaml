@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/instance: cpassare-test
   name: php-service
 spec:
-  hostname: argotest.apps.upishared.sbr-shift.gsslab.brq.redhat.com
+  host: argotest.apps.upishared.sbr-shift.gsslab.brq.redhat.com
   port:
     targetPort: 8080
   to:
