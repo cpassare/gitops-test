@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-app-deploy
+  labels:
+    app: php-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: php-app
+  template:
+    metadata:
+      labels:
+        app: php-app
+    spec:
+      containers:
+      - name: php
+        image: quay.io/cpassare/php-x-forwarder-test:latest
+        ports:
+        - containerPort: 8080
+        - containerPort: 8443
+        resources:
+          requests:
+            cpu: 20m
+            memory: 10Mi
