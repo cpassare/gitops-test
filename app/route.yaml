@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/instance: cpassare-test
+  name: php-service
+spec:
+  hostname: argotest.apps.upishared.sbr-shift.gsslab.brq.redhat.com
+  port:
+    targetPort: 8080
+  to:
+    name: php-service
+    weight: null
