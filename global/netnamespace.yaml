@@ -4,5 +4,3 @@ metadata:
   name: cpassare-gitops-test
 netid: 11920227
 netname: cpassare-gitops-test
-egressIPs:
-- 10.44.134.143
